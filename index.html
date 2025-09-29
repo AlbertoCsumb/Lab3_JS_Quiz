@@ -1,0 +1,85 @@
+<!-- Alberto Rodrigues
+  Lab 3 - JS Quiz
+  09/29/2025 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Favorite Color Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1>Favorite Color Quiz</h1>
+
+  <!-- Question 1 -->
+  <label for="a1">What's my favorite color?</label>
+  <input id="a1" placeholder="Type a color" />
+  <p id="a1-result" class="result"></p>
+  <img id="a1-icon" hidden>
+
+  <!-- Question 2 (radio) -->
+  <fieldset>
+    <legend>Question 2: Pick one (radio)</legend>
+    <div id="q2-options">
+      <label class="opt"><input type="radio" name="colors" id="q2-red" value="Red"> Red</label>
+      <label class="opt"><input type="radio" name="colors" id="q2-blue" value="Blue"> Blue</label>
+      <label class="opt"><input type="radio" name="colors" id="q2-green" value="Green"> Green</label>
+    </div>
+  </fieldset>
+  <p id="a2-result" class="result"></p>
+  <img id="a2-icon" hidden>
+
+  <!-- Question 3 (checkboxes) -->
+  <fieldset>
+    <legend>Question 3: Pick any (checkboxes)</legend>
+    <input type="checkbox" id="chbx1" value="Red" />
+    <label for="chbx1">Red</label>
+
+    <input type="checkbox" id="chbx2" value="Blue" />
+    <label for="chbx2">Blue</label>
+
+    <input type="checkbox" id="chbx3" value="Green" />
+    <label for="chbx3">Green</label>
+
+    <input type="checkbox" id="chbx4" value="Yellow" />
+    <label for="chbx4">Yellow</label>
+
+    <input type="checkbox" id="chbx5" value="Purple" />
+    <label for="chbx5">Purple</label>
+  </fieldset>
+  <p id="a3-result" class="result"></p>
+  <img id="a3-icon" hidden>
+
+  <!-- Question 4 (number) -->
+  <label for="a4">Enter a number between 1 and 10:</label>
+  <input type="number" id="a4" min="1" max="10" />
+  <p id="a4-result" class="result"></p>
+  <img id="a4-icon" hidden>
+
+  <!-- Question 5 (select) -->
+  <label for="a5">Select your favorite color:</label>
+  <select id="a5">
+    <option value="">--Please choose an option--</option>
+    <option value="Red">Red</option>
+    <option value="Blue">Blue</option>
+    <option value="Green">Green</option>
+    <option value="Yellow">Yellow</option>
+    <option value="Purple">Purple</option>
+  </select>
+  <p id="a5-result" class="result"></p>
+  <img id="a5-icon" hidden>
+
+  <!-- Attempts counter -->
+  <p id="attempts">Total times taken: 0</p>
+
+  <button id="submit">Submit</button>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
